@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.memorryaplicationproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="util.AppAPI"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MemorryAplicationProject"
+        android:hardwareAccelerated="true">
+        <activity
+            android:name=".PuzzleGame"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FaceActivity"
+            android:exported="false"
+            android:label="@string/title_activity_face"
+            android:theme="@style/Theme.MemorryAplicationProject.NoActionBar" />
+        <activity
+            android:name=".PhotoGalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplicationGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubtractionGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdditionGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MathsGamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Game4x4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ConcentrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArrangeLetterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MatchColourActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MatchNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShoppingListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PillsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhotosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetUpAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">></receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="face" />
+    </application>
+
+</manifest>

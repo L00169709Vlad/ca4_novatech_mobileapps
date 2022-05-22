@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:guidelineUseRtl="true"
+    tools:context=".PhotosActivity">
+
+    <ImageView
+        android:id="@+id/post_imageView_face"
+        android:layout_width="405dp"
+        android:layout_height="247dp"
+        android:src="@drawable/backgroud_view_photo_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/post_username_textview"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="68dp"
+        android:text="Gina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postCameraButton" />
+
+    <TextView
+        android:id="@+id/post_date_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Today"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_username_textview" />
+
+
+    <EditText
+        android:id="@+id/post_person_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="324dp"
+        android:ems="10"
+
+        android:hint="@string/post_title"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_imageView"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <Button
+        android:id="@+id/post_save_face_button"
+        android:layout_width="154dp"
+        android:layout_height="66dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/post_skip_face_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_person_et"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/post_skip_face_button"
+        android:layout_width="154dp"
+        android:layout_height="66dp"
+        android:text="Skip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_person_et"
+        app:layout_constraintVertical_bias="0.212" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

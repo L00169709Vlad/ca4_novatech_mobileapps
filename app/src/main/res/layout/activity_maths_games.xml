@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MathsGamesActivity">
+    <TextView
+        android:id="@+id/titleMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/title_gameNumbers"
+        android:textSize="30sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="130dp"/>
+
+    <Button
+        android:id="@+id/bt_addition"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/autour_one"
+        android:textColor="@color/teal_200"
+        android:background="@android:color/transparent"
+        android:text="@string/math_game_addition" />
+
+    <Button
+        android:id="@+id/bt_subtraction"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/autour_one"
+        android:textColor="@color/teal_200"
+        android:background="@android:color/transparent"
+        android:text="@string/math_game_subtraction" />
+
+    <Button
+        android:id="@+id/bt_multiplication"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/autour_one"
+        android:textColor="@color/teal_200"
+        android:background="@android:color/transparent"
+        android:text="@string/math_game_multiplication"/>
+
+    <Button
+        android:id="@+id/bt_numberMatch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/autour_one"
+        android:background="@android:color/transparent"
+        android:textColor="@color/teal_200"
+        android:text="@string/math_game_matchNumber"/>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:orientation="vertical"
+    tools:context=".GamesActivity">
+
+    <TextView
+        android:id="@+id/titleMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/title_gameMenu"
+        android:textSize="30sp"
+        android:paddingBottom="180dp"/>
+
+    <Button
+        android:id="@+id/bt_matchNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/autour_one"
+        android:padding="15dp"
+        android:text="@string/game1_text"
+        android:textColor="@color/teal_200"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/bt_matchColour"
+        android:text="@string/game2_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:padding="15dp"
+        android:textSize="19sp"
+        android:textColor="@color/teal_200"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/bt_concentration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/game3_text"
+        android:fontFamily="@font/autour_one"
+        android:padding="15dp"
+        android:textSize="19sp"
+        android:textColor="@color/teal_200"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/bt_arrangeLetters"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/autour_one"
+        android:layout_height="wrap_content"
+        android:text="@string/game4_text"
+        android:padding="15dp"
+        android:textSize="19sp"
+        android:textColor="@color/teal_200"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/bt_puzzle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/autour_one"
+        android:padding="15dp"
+        android:text="@string/game5_text"
+        android:textColor="@color/teal_200"
+        android:textSize="19sp" />
+</LinearLayout>

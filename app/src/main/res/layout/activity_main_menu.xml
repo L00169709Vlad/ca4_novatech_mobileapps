@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="18dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <TextView
+        android:id="@+id/titleMain"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:paddingBottom="180dp"
+        android:text="@string/title_text_main_menu"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/bt_games"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/autour_one"
+        android:padding="15dp"
+        android:text="@string/games_text"
+        android:textColor="@color/teal_200"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/bt_photos"
+        android:text="@string/photo_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:padding="15dp"
+        android:textSize="19sp"
+        android:textColor="@color/teal_200"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/bt_pills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pills_text"
+        android:fontFamily="@font/autour_one"
+        android:padding="15dp"
+        android:textSize="19sp"
+        android:textColor="@color/teal_200"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/bt_shoppingList"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/autour_one"
+        android:layout_height="wrap_content"
+        android:text="@string/shopping_text"
+        android:padding="15dp"
+        android:textSize="19sp"
+        android:textColor="@color/teal_200"
+        android:background="@android:color/transparent"/>
+
+
+
+
+</LinearLayout>

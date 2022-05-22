@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Congratiulations!"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_mathResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Score:20 "
+        android:fontFamily="@font/abril_fatface"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_math_playAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/teal_200"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="Play Again" />
+
+        <Button
+            android:id="@+id/bt_math_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/teal_200"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="Exit" />
+    </LinearLayout>
+</LinearLayout>

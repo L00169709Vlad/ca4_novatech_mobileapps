@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetUpAccountActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/titleAcctSetup"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/title_text_acct_setup"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameSetUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <EditText
+        android:id="@+id/nameSetUp"
+
+        android:layout_width="376dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="68dp"
+        android:autofillHints="name"
+        android:hint="@string/prompt_name"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/surnameSetUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_surname"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:autofillHints="name"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameSetUp" />
+
+    <TextView
+        android:id="@+id/dateOfBirth"
+        android:layout_width="117dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="sans-serif"
+
+        android:text="@string/dateOfBirth"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameSetUp" />
+
+    <DatePicker
+        android:id="@+id/dateOfBirthPicker"
+        android:layout_width="225dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameSetUp" />
+
+    <TextView
+        android:id="@+id/genderSetup"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/genderSetup"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfBirthPicker" />
+
+    <Spinner
+        android:id="@+id/genderInput"
+        android:layout_width="229dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/genderSetup"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfBirth" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/medicationListSetup"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderSetup" />
+
+    <Button
+        android:id="@+id/addPill"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:text="@string/button_medication"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/genderInput" />
+
+    <Button
+        android:id="@+id/continueSetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_200"
+        android:text="@string/continueSetup"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
