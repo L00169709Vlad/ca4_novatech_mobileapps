@@ -138,7 +138,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                                                                     appAPI.setUserId(currentUserId);
                                                                     appAPI.setUsername(name);
 
-                                                                    Intent intent = new Intent(CreateAccountActivity.this, SetUpAccountActivity.class);
+                                                                    Intent intent = new Intent(CreateAccountActivity.this, MainMenuActivity.class);
 //                                                                    intent.putExtra("username", username);
 //                                                                    intent.putExtra("userId", currentUserId);
                                                                     startActivity(intent);

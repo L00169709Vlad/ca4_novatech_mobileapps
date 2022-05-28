@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+import com.newrelic.agent.android.NewRelic;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        NewRelic.withApplicationToken(
+                "eu01xx0c973095a540ddd38db00940fff30744b312-NRMA"
+        ).start(this.getApplicationContext());
         setContentView(R.layout.activity_main);
         getStartedButton = findViewById(R.id.startButton);
         getStartedButton.setOnClickListener(new View.OnClickListener() {

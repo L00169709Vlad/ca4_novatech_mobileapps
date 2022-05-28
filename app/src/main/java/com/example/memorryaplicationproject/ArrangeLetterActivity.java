@@ -27,28 +27,28 @@ public class ArrangeLetterActivity extends AppCompatActivity {
     String currentWord;
 //positive words
     String[] dictionary = {
-            //A
-            "able", "absolutely","abundance", "accepted", "acclaimed", "accommodate", "accomplish", "achievement",
-            "action","active","admire","adorable","adventure","affirmative","agree","agreeable","amazing",
-            "angelic","appreciate","attentive","attractive","aware","awesome",
+//            //A
+//            "able", "absolutely","abundance", "accepted", "acclaimed", "accommodate", "accomplish", "achievement",
+//            "action","active","admire","adorable","adventure","affirmative","agree","agreeable","amazing",
+//            "angelic","appreciate","attentive","attractive","aware","awesome",
 
-            //B
-            "balanced", "beaming","beautiful", "believe", "belong", "beneficial", "benevolent", "better",
-            "betterment","bliss","blossom","bountiful ",
+//            //B
+//            "balanced", "beaming","beautiful", "believe", "belong", "beneficial", "benevolent", "better",
+//            "betterment","bliss","blossom","bountiful ",
 
-            //C
-            "calm", "capable","captivate", "care", "careful", "celebrated", "champ", "champion",
-            "charming","clarity","clean","courageous","creative","curiosity","cute","cool","compassion",
+//            //C
+//            "calm", "capable","captivate", "care", "careful", "celebrated", "champ", "champion",
+//            "charming","clarity","clean","courageous","creative","curiosity","cute","cool","compassion",
 
             //D
-            "delicate", "delight","delightful", "deserve", "determined", "disciplined", "divine", "dream",
+            "delicate", "delight",//"delightful", "deserve", "determined", "disciplined", "divine", "dream",
 
             //E
-            "easy", "effective","efficient", "elegant", "encouraging", "excellent", "energized", "energetic",
+            "easy", //"effective","efficient", "elegant", "encouraging", "excellent", "energized", "energetic",
 
-            //F
-            "fabulous", "fair","fantastic", "fine", "flourishing", "focus", "fortunate", "freedom",
-            "fresh","friendly","fun",
+//            //F
+//            "fabulous", "fair","fantastic", "fine", "flourishing", "focus", "fortunate", "freedom",
+//            "fresh","friendly","fun",
 
             //G
             "gallant", "generous","genius", "genuine", "glamorous", "glorious", "glowing", "gorgeous",
@@ -59,59 +59,59 @@ public class ArrangeLetterActivity extends AppCompatActivity {
             "hopeful",
 
             //I
-            "ideal", "illuminate","imaginative", "improve", "independent", "insightful", "inspire", "intelligent",
+            "ideal", //"illuminate","imaginative", "improve", "independent", "insightful", "inspire", "intelligent",
             "inclusive","immaculate",
 
             //J
-            "jovial", "joy","jubilant ", "deserve", "justice",
+            "jovial", "joy",//"jubilant ", "deserve", "justice",
 
             //L
-            "laugh", "leader","legendary", "liberate", "light", "like", "lively", "longevity",
-            "lovely","lovable","lucky","luminous",
+            "laugh", "leader",//"legendary", "liberate", "light", "like", "lively", "longevity",
+            "lovely","lovable","lucky",//"luminous",
 
-            //M
-            "magical", "magnificent","majestic", "marvelous", "mastery", "meaningful", "meditation", "merit",
-            "meritorious","motivating","miraculous",
-
-            //N
-            "natural", "new","nice", "novel", "nurturing", "nutritious",
-
-            //O
-            "observant", "oneness","openhearted", "openminded", "optimistic", "organized",
-
-            //P
-            "paradise", "perfect","persistent", "playful", "plentiful", "pleasant", "positive", "powerful",
-            "pretty","proud","protected","productive","progress","popular",
+//            //M
+//            "magical", "magnificent","majestic", "marvelous", "mastery", "meaningful", "meditation", "merit",
+//            "meritorious","motivating","miraculous",
+//
+//            //N
+//            "natural", "new","nice", "novel", "nurturing", "nutritious",
+//
+//            //O
+//            "observant", "oneness","openhearted", "openminded", "optimistic", "organized",
+//
+//            //P
+//            "paradise", "perfect","persistent", "playful", "plentiful", "pleasant", "positive", "powerful",
+//            "pretty","proud","protected","productive","progress","popular",
 
             //Q
             "quality", "quotable ",
 
-            //R
-            "radiant", "rational","ready", "refined", "refreshing", "reliable", "remarkable", "resourceful",
-            "right","reward","radiate",
-
-            //S
-            "safe", "scrumptious","secure", "sensational", "sensible", "shine", "simplify", "skilled",
-            "smile","soulful","sparkling","special","spiritual","stunning","successful","superb","supporting",
-
-            //T
-            "terrific", "thoughtful","thrilling", "thriving", "touch", "trusting", "truthful", "try",
-
-            //U
-            "understand", "understood","unique", "unite", "touch", "unify", "unparalleled", "try",
-            "uplift","upstanding","useful",
+//            //R
+//            "radiant", "rational","ready", "refined", "refreshing", "reliable", "remarkable", "resourceful",
+//            "right","reward","radiate",
+//
+//            //S
+//            "safe", "scrumptious","secure", "sensational", "sensible", "shine", "simplify", "skilled",
+//            "smile","soulful","sparkling","special","spiritual","stunning","successful","superb","supporting",
+//
+//            //T
+//            "terrific", "thoughtful","thrilling", "thriving", "touch", "trusting", "truthful", "try",
+//
+//            //U
+//            "understand", "understood","unique", "unite", "touch", "unify", "unparalleled", "try",
+//            "uplift","upstanding","useful",
 
             //V
-            "valued", "vibrant","victorious", "vigorous", "virtuous",
+            "valued", //"vibrant","victorious", "vigorous", "virtuous",
 
-            //W
-            "wealthy", "welcome","well", "whole", "willing", "wise", "wonderful", "worthy",
-
-            //Y
-            "yes", "yummy",
-
-            //Z
-            "zany", "zeal","zealous"
+//            //W
+//            "wealthy", "welcome","well", "whole", "willing", "wise", "wonderful", "worthy",
+//
+//            //Y
+//            "yes", "yummy",
+//
+//            //Z
+//            "zany", "zeal","zealous"
 };
 
     @Override
